@@ -56,7 +56,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.4
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!108 &1873919466344125764
 Light:
   m_ObjectHideFlags: 0
@@ -159,6 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 1
   value: 10
+  totalCoin: 0
 --- !u!1 &1496639653374222
 GameObject:
   m_ObjectHideFlags: 0

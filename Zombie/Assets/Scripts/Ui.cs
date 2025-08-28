@@ -8,6 +8,9 @@ public class Ui : MonoBehaviour
 {
     public GameObject GameOverUi;
     public Text scoreText;
+    public Text ammoText;
+
+    public Gun gun;
 
     public int score;
     public bool isGameOver { get; set; }
@@ -28,6 +31,11 @@ public class Ui : MonoBehaviour
     {
         scoreText.text = "Scroe: " + score;
     }
+
+    public void AmmoText()
+    {
+        ammoText.text = ($"{gun.magAmmo}/{gun.ammoRemain}");
+    }
     public void OnPlayerDead()
     {
         isGameOver = true;
@@ -36,7 +44,7 @@ public class Ui : MonoBehaviour
 
     private void Update()
     {
-
+        AmmoText();
         ScoreText();
     }
     public void AddScore(int amount)
